@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Brent Williford</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<head>
+   <title>Brent's Notes</title>
+   <link rel="stylesheet" href="brent-style.css">
+</head>
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+              <ul>
+                <li><a href="#lesson-1-1">History and web basics</a></li>
+                <li><a href="#lesson-1-2">Major Pieces</a></li>
+                <li><a href="#lesson-1-3">Key Definitions</a></li>
+                <li><a href="#lesson-1-4">Details</a></li>
+                <li><a href="#lesson-1-5">Note to Self</a></li>
+              </ul>
+      </li> 
+      <li><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+              <ul>
+                <li><a href="#lesson-2-1">Conceptualizing the Web</a></li>
+                <li><a href="#lesson-2-2">Tree</a></li>
+                <li><a href="#lesson-2-3">Attributes</a></li>
+                <li><a href="#lesson-2-4">Block</a></li>
+                <li><a href="#lesson-2-5">Text Editors</a></li>
+              </ul>
+      </li>
+      <li><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML </a>
+              <ul>
+                <li><a href="#lesson-3-1">Conceptualizing the Web</a></li>
+                <li><a href="#lesson-3-2">Repetition</a></li>
+                <li><a href="#lesson-3-3">Selectors</a></li>
+                <li><a href="#lesson-3-4">Box Model</a></li>
+                <li><a href="#lesson-3-5">Images</a></li>
+                <li><a href="#lesson-3-6">Code Test Refine</a></li>
+              </ul>
+      </li>
+      <li><a href="#lesson-4">Telling Computers what to do</a>
+              <ul>
+                <li><a href="#lesson-4-1">Computers</a></li>
+                <li><a href="#lesson-4-2">Computer Program</a></li>
+                <li><a href="#lesson-4-3">Programming Languages</a></li>
+                <li><a href="#lesson-4-4">Python</a></li>
+                <li><a href="#lesson-4-5">Grammer</a></li>
+                <li><a href="#lesson-4-6">Python Expressions</a></li>
+              </ul>
+      </li>
+      <li><a href="#lesson-5">Lesson 3 Input Function Output</a>
+              <ul>
+                <li><a href="#lesson-5-1">Functions</a></li>
+                <li><a href="#lesson-5-2">Return Statement</a></li>
+                <li><a href="#lesson-5-3">Making and using functions</a></li>
+                <li><a href="#lesson-5-4">Avoiding Repititions</a></li>
+                <li><a href="#lesson-5-5">Find Statement</a></li>
+              </ul>
+      </li>
+      <li><a href="#lesson-6">Lesson 3 If While and debugging</a>
+              <ul>
+                <li><a href="#lesson-6-1">Making Decision</a></li>
+                <li><a href="#lesson-6-2">If Else</a></li>
+                <li><a href="#lesson-6-3">While Loop</a></li>
+                <li><a href="#lesson-6-4">Break</a></li>
+                <li><a href="#lesson-6-5">Debugging</a></li>
+              </ul>
+      </li>
+      <li><a href="#lesson-7">Lesson 3 Structured Data: lists and For Loops</a>
+              <ul>
+                <li><a href="#lesson-7-1">Structured Data</a></li>
+                <li><a href="#lesson-7-2">Mutability</a></li>
+                <li><a href="#lesson-7-3">Aliasing</a></li>
+                <li><a href="#lesson-7-4">List Operations</a></li>
+              </ul>
+      </li>
+      <li><a href="#lesson-8">Lesson 3 How to Solve Problems</a>
+              <ul>
+                <li><a href="#lesson-8-1">General Lessons</a></li>
+                <li><a href="#lesson-8-1">6 key rules</a></li>
+                <li><a href="#lesson-8-1">Code Concepts</a></li>
+              </ul>
+    </ol>
+    </div>
+            <h1>Important Concepts</h1>
+        <div class="lesson">
+             <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+          <div class="concept" id="lesson-1-1">
+            <h4><u>History and web basics</u></h4>  
+            <p>Invented in the early 1990's<br>
+            Basics include:  Web, HTML, URL, HTTP, Web Applications <br>
+            The World Wide Web is a collection of HTML <b>(Hypertext Markup Language)</b> Documents by which HTML "glues" Documents, Images, videos together
+            and <em>Hyperlinks</em> or "links" makes up the web<br></p>
+          </div>
+          <div class="concept" id="lesson-1-2">
+            <h4><u>Major Pieces</u></h4>
+            - You, your computer, internet, HTTP and Servers make up the major pieces<br>
+            - Browsers such as Internet Explorer, Chrome, Firefox use HTTP to communicate with the servers.<br>
+          </div>
+          <div class="concept" id="lesson-1-3">
+            <h4><u>Key Definitions</u></h4>
+            - <b>HTTP</b> = Main protocol of the web.<br>
+            - <b>Servers</b> = hosts the files that make up the web<br>
+            - <b>Internet</b> = Largest computer network<br>
+            - <b>Browser</b> = program on your computer to display the files on the web.<br>
+            - <b>HTML</b> = <b>(Hypertext Markup Languange)</b> is the heart of the web; takes text content and     by markup to what it looks like on the web<br>
+          </div>
+          <div class="concept" id="lesson-1-4">
+           <h4><u>Details</u></h4>
+            HTML Markup- An element is everything within a set of opening and closing tags. Tags help define key attributes of the element.  Tags can determine the text layout.  Including Text bold tag b;  italic tag em. <b><em>Void Tags</em></b> do not have a close tag. Tag br is a line break <b>HTML Attributes (ATTR)</b> Always a value <b>Anchor</b> tag a includes: attribute; value; content; closing tag. tag img is images to be embedded. tag p paragraph <b>Inline vs. Block</b> Block has a height and width and can be managed with variations/distinctions around the text. Inludes tag p Inline impacts the normal line items. Word within a sentence."nothing fancy".<br>
+            - Inline Includes tags b, em, img, a, span, strong<br>
+            - Block includes tags div, p, for
+            <b>span vs. div</b> span works with inline portion of a document. div works with few paragraphs or images with captions
+          </div>
+         <div class="concept" id="lesson-1-5">
+            <h4><u>Note to self</u></h4>
+            - Syntax is critical to talk to a computer. Dumb computers requires humans to tell it precisely what to do with clear code!<br>
+            - When in doubt look it up!<br><br>
+          </div>
+        </div>
+        <div class="lesson">
+          <h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+          <div class="concept" id="lesson-2-1">
+            <h4><u>Conceptualizing</u></h4>
+           <p>Websites are like a house. HTML is the structure. CSS is the Style.  Javascript is the Interactive Components</p>
+          </div>
+          <div class="concept" id="lesson-2-2">
+            <h4><u>Tree</u></h4>
+            <p>Tree structure helps structure a website.  HTML and CSS are Languages and language has Syntax and Rules to follow <br>
+            HTML controls the structure and CSS controls the "style".  The Browser turns tags into Elements and the <b><em>DOM (Document Object Model)</em></b><br>
+            organizes the content into a organized tree structure</p>
+          </div>
+          <div class="concept" id="lesson-2-3">
+           <h4><u>Attributes</u></h4>
+           <p>Using a tage attribute and value such as tag h1 Class = "Article" reflects each time a h1 tag is used where a attribute
+            equals "Article" value then you can use CSS to change the coloring to <span style="color:blue">blue</span> for example.</p>
+          </div>
+          <div class="concept" id="lesson-2-4">
+            <h4><u>Blocks</u></h4>
+            <p>I learned how to Boxify! To use paper and pencel or software to group images, text, etc into Boxes <br> around elements. Even Border Raius
+            If you can group property changes circles to squars. To group items into boxes then you can move elements around for great visuals
+              and set a website to target your readers. Idea is to work Big to Small</p>
+          </div>  
+          <div class="concept" id="lesson-2-5">
+            <h4><u>Text Editors</u></h4>
+            <p>Installed Sublime Text 2 <a href="http://www.sublimetext.com/">Sublimetext.com</a>. Text editors such as scratch.io, Codepen.io and Sublimetext 2 variations of ease for 
+            use.  Sublime may help generate text to complete syntax for example.
+          </div>
+  </div>
+        <div class="lesson">
+          <h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2> 
+          <div class="concept" id="lesson-3-1">
+            <h4><u>CSS Definition and concept</u></h4>
+            <p>Cascading Style Sheets (CSS) with structure based on boxes, CSS helps focus on style and appearance.  Seperation of HTML and CSS help seperate the formatting from the HTML coding.  Cascading allows for replication within the coding to make a change in one location but touch multiple areas.   This allows coders to avoid mistakes by typing code multiple times. In a manner of Cascading styles, CSS goes down and down into the code cascading (like National->state->municipal->home laws) until the best rule for an element  gets applied. Cascade also can be referenced as <b><em>inheritance</em></b>.
+            </p>
+          </div>
+          <div class="concept" id="lesson-3-2">
+            <h4><u>Repetition</u></h4>
+            <p>Avoiding repetition is important.  Failing to avoid repetition leads to adding code in various places with little differences.  This may lead to errors which takes considerable amount of time to research.  If a coder decides to make changes having <b>Consistency</b> is key.  <b>Consistency</b> is the concept to keep details looking the same.  To keep code the same, an example is to assign a tag div the same class and then specify the style for that class allowing coders to make a single line change that impacts an entire class association throughout the code.  One line changes multiple areas.</p>
+          </div>
+        <div class="concept" id="lesson-3-3">
+          <h4><u>Selectors</u></h4>
+          <p>Selectors in CSS defines which particular element ion a page a particular style will be applied to.  To define specific elements to apply style
+            select elements by <b><em>Class</em></b>.  This allows CSS to (example: .desription { attribute: color; }.  Within the HTML the tag div that has a 
+            <b>Class</b> of desciption can be turned red (attribute : red;). CSS has a lot of functionality.  Use %based or hex code for colors.
+          </p>
+        </div>
+        <div class="concept" id="lesson-3-4">
+          <h4><u>Box Model</u></h4>
+          <p>Box Model consist of Margins, border, padding and content. Contents is the nucleus surrounding by the other components. WOrking wiht Box Model
+            helps structure the boxes for good appearance and makes a "Clean" Website.  Key use box-sixing: border-box; helps standardize and no thave to 
+            recalculate boxes each time. Browser may be different to use webkit, mox, ms for box sizing. <b><em>Class { Display: Flex; } will help
+            change display of parent container.</em></b>"
+          </p>
+        </div>
+        <div class="concept" id="lesson-3-5">
+          <h4><u>Images</u></h4>
+          <p>Store Images where the HTML page can access.  Image name not to include spaces or accented characters Big to Small</p>
+        </div> 
+        <div class="concept" id="lesson-3-6">
+              <h4><u>Code Test Refine</u></h4>
+          <p>Code Test Refine.  When getting a Design Mock, code the need, test for accuracy and modify or changes as needed.  Starting with structure
+          and working down into the details to get the design correct. Use Dev tools (Elements/style) for <em>on the fly</em> changes before coding into
+          HTML or CSS.</p>
+        </div> 
+  </div>
+  </div>
+        <div class="lesson">
+          <h2 id="lesson-4">Telling Computers what to do</h2> 
+          <div class="concept" id="lesson-4-1">
+            <h4><u>Computers and Programs</u></h4>
+            <p>Computers as a physical entity are like bricks.  Less functionality than a toaster.  It isn't until we add programs to a computers that we realize we can set a computer to ultimately do any computation and instructions to have computer do anything we want.  This is powerful.
+            </p>
+          </div>
+          <div class="concept" id="lesson-4-2">
+            <h4><u>Computer Program</u></h4>
+            <p>Programs are required to tell a computer what to do.  Programs need to be a preciese series of steps to tell a computer to do what we want. Computers can handle the work of billioins of instructions per second.</p>
+          </div>
+          <div class="concept" id="lesson-4-3">
+            <h4><u>Programming Languages</u></h4>
+            <p>Programs tell computers what to do. Programming Languages are used over natural language to be precise.  Programming language avoid ambiguity (interpret several different ways) and verbosity (too much detail) Backus (1924-2007) designed Fortran.  Admiral Grace Hopper (Colbalt). 
+            </p>
+          </div>
+          <div class="concept" id="lesson-4-4">
+            <h4><u>Python</u></h4>
+            <p>Python is a programming Language that runs on an interpreter which executes on the computer the instructurs the computer can understand.  Python has <b>Grammer</b> to follow.  <em>Python Grammer for Arithmetic Expression</em> uses a rule to follow non-terminal -> replacement method.  This form of drilling down an down to replacement until return with a terminal.  This allows for structured rules that makes Python stricter than natural language but simple and precise.
+            </p>
+          </div>
+          <div class="concept" id="lesson-4-5">
+            <h4><u>Grammer</u></h4>
+            <p>Python Language runs on an interpreter which executes on the computer in a language the computer can understand.  Python has <b>Grammer</b> to follow.  <em>Python Grammer for Arithmetic Expression</em> uses a rule to follow non-terminal -> replacement method.  This form of drilling down an down to replacement until return with a terminal.  This allows for structured rules that makes Python stricter than natural language as well as simpler and more precise.
+            </p>
+          </div>
+          <div class="concept" id="lesson-4-6">
+            <h4><u>Python Expressions</u></h4>
+            <p>Expressions are part of a statement that has value.  Approprite grammer must be used.  Expression operator expression.  Exmaples of expressions are 0,1,2...  Operators *,+ example.  So if we use appropriate grammer we can set expression Operator Expression to equal print 1*1; print 2 +1.
+            </p>
+          </div>
+  </div>
+  </div>
+        <div class="lesson">
+          <h2 id="lesson-5">Lesson 3 Input Function Output</h2> 
+          <div class="concept" id="lesson-5-1">
+            <h4><u>Functions</u></h4>
+            <p>Functions are called procedure in Python. Producures us inputs sometimes called operands or arguments.  Functions are useful as they perform only one thing. You can call a function and take an operand or argument and pass in to a function/procedure. Such as find you pass in inputs find('au', 3) for example is inputs.  page.find('au' 3) page is an input to the find as well.  
+            </p>
+          </div>
+          <div class="concept" id="lesson-5-2">
+            <h4><u>Return statement</u></h4>
+            <p>The return key will evaluate against the procedure and  thereturn statement will evaluate the body of the procdure and return the value (output).  Without return, nothing will be produced in a procedure.  Output will show none. Mapping inputs to outputs.</p>
+          </div>
+          <div class="concept" id="lesson-5-3">
+            <h4><u>Making and using functions</u></h4>
+            <p>Making a function is the shell being.  The function uses parameters to pull in values when the function is called.  Making a function is Function, parameter, variable, string and how each work together.  
+            </p>
+          </div>
+          <div class="concept" id="lesson-5-4">
+            <h4><u>Avoiding Repetition</u></h4>
+            <p>Making a function is a way to continue to call on the function to perform a specific task over and over. Fnctions can be used within the program or universally in any program to be call upon to do a task.
+            </p>
+          </div>
+          <div class="concept" id="lesson-5-5">
+            <h4><u>Find Commands</u></h4>
+            <p>THe find command is a useful function that allows a programmer to find specific text within a larger data set.  To use find can help in a web browser for example to find key words within the text.  
+            </p>
+  </div>
+  </div>
+        <div class="lesson">
+          <h2 id="lesson-6">Lesson 3 Lesson 3 If While and debugging</h2> 
+          <div class="concept" id="lesson-6-1">
+            <h4><u>Making Decisions</u></h4>
+            <p>Using operators to compare numbers or strings using epxresssion such as boolean espressions helps build code.  Equals (=) sign to test numbers and double equals == or assignments to help test true or false against the value. We can construct a <b><em>Desicion Making Tree</em></b> to help <u>Think Procedurally</u> which helsp build code. 
+            </p>
+          </div>
+          <div class="concept" id="lesson-6-2">
+            <h4><u>If Else Statement</u></h4>
+            <p>The if statement has a test expression; block and a value to keep track of loop interations.  i = value.  <em>If</em> statements test/evaluates the variable against the test value and if true returns a value <em>returns a different value</em>. This is a one time test/evaluation and code stops.<br>
+              At this point with Comparisons, procedures, arithmatic and the if statement we can write every possible program with what we know./p>
+          </div>
+          <div class="concept" id="lesson-6-3">
+            <h4><u>While Loop</u></h4>
+            <p>Unlike IF Else statements that test values for true or false and return an output, a loop such as the While loop will test/compare against a value and will continue to loop infinitely until a conditions is met.<br>
+            <em><u>Example:</em></u><br>
+              def print_numbers(n):<br>
+              i=1<br>
+              while i <=n:<br>
+              print i<br>
+              i-i+1<br>
+              print_numbers(3)<br>
+            </p>
+          </div>
+          <div class="concept" id="lesson-6-4">
+            <h4><u>Break</u></h4>
+            <p>Do to loops being able to work infinitely unless a computers memory is full or the power is shut off, teh break feature allows for loops to stop when test = true.  If Break equals false then keep going else stop. <br><em><u>Example:</em></u><br>
+              def print_numbers(n):<br>
+              i=1<br>
+              while true:
+              if i > n:
+                break
+              print i<br>
+              i=i+1
+            </p>
+          </div>
+          <div class="concept" id="lesson-6-5">
+            <h4><u>Debuggin</u></h4>
+            <p>Debugging code is a must have for all programmers at all levels.  Bugs are inevitable.  You can't prevent a bug!  You have to develop a strategy to handle bugs.  There is base data the compiler will provide to help against a bug such as:  Line, function and 'How' it got there.  To strategize against a bug:  Use a search engine to research for help to remove the bug.  Use <b> Print</b> statement to follow the code to help identify what is going wrong.  Always keep code and don't discard.  It may help if you reach out to know history and things you've tried.  Going forward if you increase the # of bugs this helps get back to a state with less bugs. Copy example models how how the code should work.  If the test code works then apply your code on top for desire output. 
+            </p>
+          </div>
+    </div>
+    <div class="lesson">
+          <h2 id="lesson-7">Lesson 3 Structured Data: Lists and For Loops</h2> 
+          <div class="concept" id="lesson-7-1">
+            <h4><u>Structered Data</u></h4>
+            <p>Strings are a kind of structured Data.  Strings can be broken down into charaters and can operat on sub sequences of the string.  String is a sequence of characters.  List is a sequenceof anything. s = 'yabba!' s[0] will pull out 'y' from the string.
+            </p>
+          </div>
+          <div class="concept" id="lesson-7-2">
+            <h4><u>Mutations</u></h4>
+            <p>Within a list, mutations allow for items within a list to be modified. </p>
+          </div>
+          <div class="concept" id="lesson-7-3">
+            <h4><u>Aliasing</u></h4>
+            <p>Aliasing allows for items to be referenced to the same variable.  James Bond = 007.<br>
+            </p>
+          </div>
+          <div class="concept" id="lesson-7-4">
+            <h4><u>List Operators</u></h4>
+            <p>List operators such as Append, + , Len are like procedures similar to find. Append addes elements to a list.  The '+' addes numerical values to a list.  Len references the element counts with the list.
+            </p>
+          </div>
+
+  </div>
+  <div class="lesson">
+          <h2 id="lesson-8">Lesson 3 Problem Solving</h2> 
+          <div class="concept" id="lesson-8-1">
+            <h4><u>General Lessons</u></h4>
+            <p>One of the first things we should doe to solve a problem is to make sure we understand the computational problems.  Seek to understand the relationship between teh inputs to the outputs.  With inputs define a Procedure to accomplish the output.
+            </p>
+          </div>
+          <div class="concept" id="lesson-8-2">
+            <h4><u>6 Key Rules</u></h4>
+            <p>0. Don't Panic<br>
+            1. Ask what are the inputs?<br>
+            2. Ask what are the outputs?<br>
+            3. Wor through some examples by hand.<br>
+            4. Simple MechanicalSolution<br>
+            5. Develop incremeentally and test as you go</p>
+          </div>
+          <div class="concept" id="lesson-8-3">
+            <h4><u>Code Concepts</u></h4>
+            <p>In working with dates, there are number of functions to take in with Python.  There are varous Calendars that have been created.  Examples would be to use the Gregorian Calendar to calculat against in a program.<br>
+            Use algorithms Pseudocode to walk through examples which can be over complex to get the logic but continue to build to find simpler ways to code.<br>
+            Build small bits of code, test.  <b> Making Progress is Good</b>
+            Use the assert command to reflect errors.  If there are no errors then the code is good.  Assertions help programmers to identify issues quickly and to allow for easier modification.
+            </p>
+          </div>
+</body>
+
+</body>
+
+</html>
